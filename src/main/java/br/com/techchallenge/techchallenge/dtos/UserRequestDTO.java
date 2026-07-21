@@ -2,18 +2,18 @@ package br.com.techchallenge.techchallenge.dtos;
 
 import jakarta.validation.constraints.NotNull;
 
-public record UsuarioRequestDTO(
+public record UserRequestDTO(
         @NotNull(message = "Nome é obrigatório")
-        String nome,
+        String name,
         @NotNull(message = "Email é obrigatório")
         String email,
         @NotNull(message = "Login é obrigatório")
-        String usuarioLogin,
+        String userLogin,
         @NotNull(message = "Senha é obrigatória")
-        String senha,
+        String password,
         @NotNull(message = "Endereço é obrigatório")
-        String endereco,
+        String address,
         @NotNull(message = "Tipo de usuário é obrigatório")
-        String tipoUsuario
+        String userType
 ) {
 }

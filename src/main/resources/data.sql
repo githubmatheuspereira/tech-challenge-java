@@ -1,5 +1,5 @@
 CREATE TABLE usuario (
-    id_usuario BIGINT AUTO_INCREMENT PRIMARY KEY,
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
     email VARCHAR(255) UNIQUE NOT NULL,
     usuario_login VARCHAR(255) UNIQUE NOT NULL,
@@ -10,7 +10,7 @@ CREATE TABLE usuario (
 );
 
 INSERT INTO usuario (nome, email, usuario_login, senha, endereco, tipo_usuario) VALUES
-    ('João Silva', 'js@js.com', 'loginjs', '1234', 'Rua Dez, 500 - Centro', 'dono');
+    ('João Silva', 'js@js.com', 'loginjs', '1234', 'Rua Dez, 500 - Centro', 'owner');
 
 INSERT INTO usuario (nome, email, usuario_login, senha, endereco, tipo_usuario) VALUES
-    ('Maria José', 'mariaj@mj.com', 'mariaj', '1234', 'Rua Trinta, 250 - Centro', 'usuario');
+    ('Maria José', 'mariaj@mj.com', 'mariaj', '1234', 'Rua Trinta, 250 - Centro', 'user');
